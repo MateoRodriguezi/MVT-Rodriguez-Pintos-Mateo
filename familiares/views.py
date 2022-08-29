@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.template import Template, Context, loader
+from django.template import loader
 from familiares.models import Datos
 
 def listar_familia(request):
