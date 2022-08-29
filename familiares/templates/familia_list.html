@@ -8,13 +8,14 @@
 </head>
 <body>
   <div class="title">
-		<h3>LISTA DE FAMILIARES</h3>
+		<u><h3 style="color: blue">LISTA DE FAMILIARES:</h3></u>
 	</div>
 
 		{% for familiar in familiares %}
-          Nombre del familiar :- <u>{{familiar.nombre}}</u> <br>- 
-          Número de contacto: {{familiar.num_celular}},<br> 
-          nació el {{familiar.fecha_nacimiento}}.
+          <b>Nombre del familiar</b> :- {{familiar.nombre|capfirst}}<br>- 
+          <b>Apellido</b> :- {{familiar.apellido|capfirst}}<br>-
+          <b>Cuál es su altura? </b> :- {{familiar.altura}} cm <br>-
+          <b>Nació en la fecha :</b> {{familiar.fecha_nacimiento}}.
 			<br> <br>
 		{% endfor %}
 </body>
