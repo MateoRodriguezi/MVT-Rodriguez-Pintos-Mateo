@@ -55,7 +55,7 @@ ROOT_URLCONF = 'familia.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/mateorodriguez/Desktop/entregaMVT/familia/templates/familia_list.html'],
+        'DIRS': ['/Users/mateorodriguez/Desktop/entregaMVT/familia/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
